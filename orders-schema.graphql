@@ -13,10 +13,8 @@ Returns information about a specific purchase
 """
 type Order @key(fields: "id") {
   """
-  Each order has a unique id which is separate from the user or items they bought
-  """
-  """
-  Get a specific order by id. Meant to be used for a detailed view of an order
+  Each order has a unique id which is separate from the user or items they bought.
+  Get a specific order by id. Meant to be used for a detailed view of an order.
   """
   order(id: ID!): Order @authenticated
 
